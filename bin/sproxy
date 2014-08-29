@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+require "sproxy"
+Sproxy::CLI::start(ARGV)

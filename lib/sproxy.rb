@@ -1,5 +1,8 @@
-require "sproxy/version"
+require 'sproxy/version'
+
+require 'eventmachine'
+require 'thor'
 
 module Sproxy
-  # Your code goes here...
+  autoload :CLI, "sproxy/cli.rb"
 end
