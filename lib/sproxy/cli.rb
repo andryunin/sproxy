@@ -6,6 +6,8 @@ module Sproxy
     desc 'start TARGET_ADDR TARGET_PORT', 'Run proxy server'
     def start(target_addr, target_port)
       puts "#{options[:bind_addr]}:#{options[:bind_port]} <-> #{target_addr}:#{target_port}"
+
+      Sproxy.application_start(target_addr, target_port, options[:bind_addr], options[:bind_port])
     end
   end
 end
